@@ -13,6 +13,14 @@
       "vite/client",
       "vite-plugin-pages/client"
     ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "_v/*": ["src/views/*"],
+      "_api/*": ["src/api/*"],
+      "_utils/*": ["src/utils/*"],
+      "img/*": ["src/assets/images/*"],
+    },
     "lib": ["esnext", "dom"]
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
