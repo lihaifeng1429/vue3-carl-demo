@@ -85,3 +85,22 @@ export function generateMessage():MsgInfo {
     message: faker.lorem.text(),
   };
 }
+
+let idCounter = 0
+export interface TextInfo{
+  id:string,
+  text:string
+}
+export function getListData(count:number):TextInfo[] {
+  const data:TextInfo[] = []
+  for (let index = 0; index < count; index++) {
+    data.push({
+      id: String(idCounter++),
+      text: Math.random()
+        .toString(16)
+        .substr(10)
+    })
+  }
+  return data
+}
+

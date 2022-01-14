@@ -19,9 +19,9 @@ declare module "vue-virtual-scroller" {
   export const DynamicScroller: Component<any, any, any, any>;
   export const DynamicScrollerItem: Component<any, any, any, any>;
 
-  export function IdState(options?: {
-    idProp?: (vm: any) => any;
-  }): ComponentOptions<Vue> | typeof Vue;
 
-  export default plugin;
+}
+
+declare module 'vue-virtual-scroll-list' {
+
 }
