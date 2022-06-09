@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@types/faker": "^5.5.9",
+    "element-ui": "^2.15.6",
     "faker": "^5.5.3",
     "tdesign-vue-next": "^0.6.2",
     "vue": "^3.2.16",
